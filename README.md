@@ -34,5 +34,15 @@ You can run the following command to run tests and flake8 linter on the codebase
 docker-compose run app sh -c "python manage.py test && flake8"
 ```
 
+## Project Layout
 
+### ./app/core
+
+Core app which contains resources that other subapps will use.
+
+## Running Migrations
+
+When starting app for the first time or making changes to the models
+
+`docker-compose run app sh -c "python manage.py makemigrations core"`
 
